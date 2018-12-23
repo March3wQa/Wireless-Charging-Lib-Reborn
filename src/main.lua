@@ -372,7 +372,7 @@ start_charging = function(entity)
     if(#chargers > 0) then
       global.charging_vehicles[unit] = chargers
       --
-      game.raise_event(events.on_charging_started, {
+      script.raise_event(events.on_charging_started, {
         entity = entity,
         grid = global.grids[unit],
         charging_entities = charging_entities,
